@@ -38,14 +38,7 @@ npm run test
 ```
 ### Para verificar o coverage, execute os comandos abaixo
 
-```
-yarn coverage
-```
-#### ou
-
-```
-npm run coverage
-```
+Abra a pasta "coverage" -> "lcov-report" e abra no navegador o arquivo index.html
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
