@@ -84,32 +84,32 @@ carRental
 Create
 ```
 {
-	"nome":"marcos"
+	"nome":"Nome Motorista"
 }
 ```
 update
 ```
 {
-	"id": "5be7f2f3-aed0-4940-a7a8-5c62129bfae6",
-	"nome":"marcos novo"
+	"id": "Id Motorista",
+	"nome":"Nome Motorista"
 }
 ```
 FindAll
 ```
 {
-		"nome":""
+		"nome":"Nome para a busca"
 }
 ```
 Find
 ```
 {
-	"id": "f27e8d6e-e109-4c63-a740-81ab14b8e0ab"
+	"id": "Id Motorista"
 }
 ```
 Delete
 ```
 {
-		"id": "b0313df3-85d6-40c8-8d02-d23e86df0988"
+		"id": "Id Motorista"
 }
 ```
 
@@ -118,37 +118,37 @@ Delete
 Create
 ```
 {
-    "placa": "hgd2564",
-     "cor": "vermelho",
-     "marca": "fiat"
+    "placa": "Placa do carro",
+     "cor": "Cor do carro",
+     "marca": "Marca do carro"
 }
 ```
 Update
 ```
 {
-	"id": "bedb09e7-463c-4592-bd56-be33b68be501",
-  "placa": "hgd2563",
-  "cor": "brancosss",
-  "marca": "fiat"
+	"id": "Id do carro",
+  "placa": "Placa do carro",
+  "cor": "Cor do carro",
+  "marca": "Marca do carro"
 }
 ```
 FindAll
 ```
 {
-    "cor": "",
-    "marca": null
+    "cor": "Cor do carro",
+    "marca": "Marca do carro"
 }
 ```
 Find
 ```
 {
-	"id": "bddf5014-9edb-455b-9e6c-85f63383c25f"
+	"id": "Id do carro"
 }
 ```
 Delete
 ```
 {
-		"id": "622a84bb-eca6-48f4-87f4-41b524eba998"
+		"id": "Id do carro"
 }
 ```
 ### Car Rental
@@ -157,16 +157,16 @@ Post
 ```
 {
 	"driver":{
-	            "nome": "marcos",
-  		    "id": "07d744a0-4688-4cbd-b58e-b66ecb690292"
+	            "nome": "Nome do motorista",
+  		    "id": "Id Motorista"
 		},
 	"automobile":{
-		    "placa": "hgd2564",
- 		    "cor": "vermelho",
-  		    "marca": "fiat",
-  		   "id": "348252c1-74a4-4f13-9599-f8639a5559e2"
+		    "placa": "Placa do carro",
+ 		    "cor": "Cor do carro",
+  		    "marca": "Marca do carro",
+  		   "id": "Id do Carro"
 		},
-	"descricaoUtilizacao":"Aluguel do veiculo"
+	"descricaoUtilizacao":"Descrição do aluguel do carro"
 	
 }
 ```
