@@ -45,33 +45,33 @@ Abra a pasta "coverage" -> "lcov-report" e abra no navegador o arquivo index.htm
 #### Driver
 
 #### POST
-http://localhost:3333/driver
-http://localhost:3333/driver/update
+driver
+driver/update
 
 #### GET
-http://localhost:3333/driver/findAll
-http://localhost:3333/driver/find
+driver/findAll
+driver/find
 
 #### DELETE
-http://localhost:3333/driver/delete
+driver/delete
 
 #### Automobile
 
 #### POST
-http://localhost:3333/automobile
-http://localhost:3333/automobile/update
+automobile
+automobile/update
 
 #### GET
-http://localhost:3333/automobile/findAll
-http://localhost:3333/automobile/find
+automobile/findAll
+automobile/find
 
 #### DELETE
-http://localhost:3333/automobile/delete
+automobile/delete
 
 #### Car Rental
 
 #### POST
-http://localhost:3333/carRental
+carRental
 
 
 ### Objetos de envio
