@@ -6,16 +6,16 @@ import { DriverEntitie } from '../models/DriverEntitie'
 class DeleteDriverServer {
 
     constructor(
-        @inject('AutomobileRepository')
-        private automobileRepository: IDriverRepository
+        @inject('DriverRepository')
+        private driverRepository: IDriverRepository
     ) { }
 
     public async execute(id: string): Promise<Array<DriverEntitie>> {
-        const existAutomobileById = this.automobileRepository.findById(id)
-        if (existAutomobileById) {
-            return this.automobileRepository.delete(id);
+        const existDriverById = this.driverRepository.findById(id)
+        if (existDriverById) {
+            return this.driverRepository.delete(id);
         }
-        throw Error("Não existe um carro para esse Id");
+        throw Error("Não existe um motorista para esse Id");
     }
 }
 export { DeleteDriverServer }

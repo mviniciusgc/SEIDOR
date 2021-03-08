@@ -7,12 +7,13 @@ import { DriverEntitie } from '../models/DriverEntitie'
 class FindDriverServer {
 
     constructor(
-        @inject('AutomobileRepository')
-        private automobileRepository: IDriverRepository
+        @inject('DriverRepository')
+        private driverRepository: IDriverRepository
     ) { }
 
     public async execute(id: string): Promise<DriverEntitie | undefined> {
-        return this.automobileRepository.findById(id);
+        const driver = this.driverRepository.findById(id);
+        return driver;
     }
 }
 export { FindDriverServer }

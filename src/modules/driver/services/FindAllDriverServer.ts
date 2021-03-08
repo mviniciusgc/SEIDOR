@@ -8,12 +8,12 @@ import { IFilterDriver } from '../interfaces/filters/IFilterdriver'
 class FindAllDriverServer {
 
     constructor(
-        @inject('AutomobileRepository')
-        private automobileRepository: IDriverRepository
+        @inject('DriverRepository')
+        private driverRepository: IDriverRepository
     ) { }
 
     public async execute(data: IFilterDriver): Promise<Array<DriverEntitie>> {
-        return this.automobileRepository.findList(data);
+        return this.driverRepository.findList(data);
     }
 }
 export { FindAllDriverServer }

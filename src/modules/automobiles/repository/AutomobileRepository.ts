@@ -8,6 +8,11 @@ import { IFilterAutomobile } from '../interfaces/filters/IFilterAutomobile'
 class AutomobileRepository implements IAutomobileRepository {
     private automobiles: Array<AutomobileEntitie>
 
+    constructor() {
+        this.automobiles = [];
+    }
+
+
     public create(data: IAutomobile): AutomobileEntitie {
         const automobile = new AutomobileEntitie(data)
         this.automobiles.push(automobile);
@@ -31,7 +36,6 @@ class AutomobileRepository implements IAutomobileRepository {
     public findList({ marca, cor}: IFilterAutomobile): Array<AutomobileEntitie> {
 
         let carro = this.automobiles;
-
         if (marca) {
             carro = carro.filter((item) => item.marca === marca)
         }

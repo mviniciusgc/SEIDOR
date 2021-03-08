@@ -12,7 +12,6 @@ class UpdateDriverServer {
     ) { }
 
     public async execute(data: IDriver): Promise<DriverEntitie> {
-
         if (data.id) {
             const existAutomobileById = this.driverRepository.findById(data.id)
             if (existAutomobileById) {

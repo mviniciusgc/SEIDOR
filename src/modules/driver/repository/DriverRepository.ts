@@ -7,6 +7,10 @@ import { IFilterDriver } from '../interfaces/filters/IFilterdriver'
 class DriverRepository implements IDriverRepository {
     private drivers: Array<DriverEntitie>
 
+    constructor() {
+        this.drivers = [];
+    }
+
     public create(data: IDriver): DriverEntitie {
         const automobile = new DriverEntitie(data)
         this.drivers.push(automobile);
@@ -21,11 +25,12 @@ class DriverRepository implements IDriverRepository {
     }
 
     public findById(id: string): DriverEntitie | undefined {
-        return this.drivers.find(item => item.id === id)
+        const driver = this.drivers.find(item => item.id === id)
+        return driver;
     }
-    public findList({ nome}: IFilterDriver): Array<DriverEntitie> {
+    public findList({ nome }: IFilterDriver): Array<DriverEntitie> {
         let drivers = this.drivers;
-        if (nome){
+        if (nome) {
             drivers = drivers.filter((item) => item.nome === nome)
         }
         return drivers;

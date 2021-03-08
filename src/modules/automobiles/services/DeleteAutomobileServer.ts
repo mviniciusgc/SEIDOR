@@ -1,7 +1,7 @@
 import { injectable, inject } from "tsyringe";
 import { IAutomobileRepository } from '../interfaces/interfaceRepository/IAutomobileRepository'
 import { IAutomobile } from '../interfaces/interfaceDTO/IAutomobileDTO'
-import { Automobile } from '../models/AutomobileEntitie'
+import { AutomobileEntitie } from '../models/AutomobileEntitie'
 
 @injectable()
 class DeleteAutomobileServer {
@@ -11,7 +11,7 @@ class DeleteAutomobileServer {
         private automobileRepository: IAutomobileRepository
     ) { }
 
-    public async execute(id: string): Promise<Array<Automobile>> {
+    public async execute(id: string): Promise<Array<AutomobileEntitie>> {
         const existAutomobileById = this.automobileRepository.findById(id)
         if (existAutomobileById) {
             return this.automobileRepository.delete(id);

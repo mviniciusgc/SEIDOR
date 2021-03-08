@@ -1,7 +1,7 @@
 import { injectable, inject } from "tsyringe";
 import { IAutomobileRepository } from '../interfaces/interfaceRepository/IAutomobileRepository'
 import { IAutomobile } from '../interfaces/interfaceDTO/IAutomobileDTO'
-import { Automobile } from '../models/AutomobileEntitie'
+import { AutomobileEntitie } from '../models/AutomobileEntitie'
 
 @injectable()
 class CreateAutomobileServer {
@@ -11,7 +11,7 @@ class CreateAutomobileServer {
         private automobileRepository: IAutomobileRepository
     ) { }
 
-    public async execute(data: IAutomobile): Promise<Automobile> {
+    public async execute(data: IAutomobile): Promise<AutomobileEntitie> {
         const existAutomobileForPlate = this.automobileRepository.findByPlate(data.placa)
         if (existAutomobileForPlate) {
             throw Error("Placa do carro já cadastrada");

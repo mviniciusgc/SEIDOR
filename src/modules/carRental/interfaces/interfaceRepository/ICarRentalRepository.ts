@@ -1,14 +1,14 @@
 import { IAutomobile } from '@modules/automobiles/interfaces/interfaceDTO/IAutomobileDTO'
 import { IDriver } from '@modules/driver/interfaces/interfaceDTO/IDriverDTO'
 import { CarRentalEntitie } from '../../models/CarRentalEntitie'
-import { IFilterDriver } from '../filters/IFilterdriver'
 
 interface ICarRentalRepository {
-    create(motorista: IDriver, carro: IAutomobile): CarRentalEntitie;
+    create(motorista: IDriver, carro: IAutomobile, descricaoUtilizacao: string): CarRentalEntitie;
     //  update(data: IDriver): DriverEntitie;
     //  findList(data: IFilterDriver): Array<DriverEntitie>;
     //  delete(id: string): Array<DriverEntitie>;
-    //  findById(id: string): DriverEntitie | undefined;
+      findByIdDriver(id: string): CarRentalEntitie | undefined;
+      findByIdAutomobile(id: string): CarRentalEntitie | undefined;
 }
 
 export { ICarRentalRepository }
