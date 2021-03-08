@@ -97,7 +97,7 @@ update
 FindAll
 ```
 {
-		"nome":"Nome para a busca"
+	"nome":"Nome para a busca"
 }
 ```
 Find
@@ -109,7 +109,7 @@ Find
 Delete
 ```
 {
-		"id": "Id Motorista"
+	"id": "Id Motorista"
 }
 ```
 
@@ -118,25 +118,25 @@ Delete
 Create
 ```
 {
-    "placa": "Placa do carro",
-     "cor": "Cor do carro",
-     "marca": "Marca do carro"
+	"placa": "Placa do carro",
+	"cor": "Cor do carro",
+	"marca": "Marca do carro"
 }
 ```
 Update
 ```
 {
 	"id": "Id do carro",
-  "placa": "Placa do carro",
-  "cor": "Cor do carro",
-  "marca": "Marca do carro"
+        "placa": "Placa do carro",
+        "cor": "Cor do carro",
+        "marca": "Marca do carro"
 }
 ```
 FindAll
 ```
 {
-    "cor": "Cor do carro",
-    "marca": "Marca do carro"
+	"cor": "Cor do carro",
+	"marca": "Marca do carro"
 }
 ```
 Find
@@ -148,7 +148,7 @@ Find
 Delete
 ```
 {
-		"id": "Id do carro"
+	"id": "Id do carro"
 }
 ```
 ### Car Rental
@@ -157,15 +157,15 @@ Post
 ```
 {
 	"driver":{
-	            "nome": "Nome do motorista",
-  		    "id": "Id Motorista"
-		},
+		"nome": "Nome do motorista",
+		"id": "Id Motorista"
+	},
 	"automobile":{
-		    "placa": "Placa do carro",
- 		    "cor": "Cor do carro",
-  		    "marca": "Marca do carro",
-  		   "id": "Id do Carro"
-		},
+		"placa": "Placa do carro",
+		"cor": "Cor do carro",
+		"marca": "Marca do carro",
+		"id": "Id do Carro"
+	},
 	"descricaoUtilizacao":"Descrição do aluguel do carro"
 	
 }
