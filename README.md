@@ -50,6 +50,7 @@ driver/update
 
 #### GET
 driver/findAll
+<br> 
 driver/find
 
 #### DELETE
@@ -59,10 +60,12 @@ driver/delete
 
 #### POST
 automobile
+<br> 
 automobile/update
 
 #### GET
 automobile/findAll
+<br> 
 automobile/find
 
 #### DELETE
